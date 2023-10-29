@@ -18,7 +18,7 @@ module.exports = () => {
       // DONE: Add and configure workbox plugins for a service worker and manifest file.
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "TODOs List",
+        title: "my content",
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
@@ -26,15 +26,19 @@ module.exports = () => {
       }),
       new WebpackPwaManifest({
         // Create a manifest.json:
-        name: "My Manifest App",
-        short_name: "MyPWA",
-        description: "My awesome Manifest Web App!",
-        background_color: "#ffffff",
-        start_url: "./",
-        publicPath: "./",
+        fingerprints: false,
+        inject: true,
+        name: "DAY OF THE DEAD",
+        short_name: "DEAD",
+        description:
+          "Progressive Web Applications (PWA) Challenge: Text Editor",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
-            src: path.resolve("assets/images/logo.png"),
+            src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
             destination: path.join("assets", "icons"),
           },
