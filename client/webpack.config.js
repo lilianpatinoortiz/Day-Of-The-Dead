@@ -28,11 +28,11 @@ module.exports = () => {
         // Create a manifest.json:
         fingerprints: false,
         inject: true,
-        name: "DAY OF THE DEAD",
+        name: "DAY OF THE DEAD 💀",
         short_name: "DEAD",
         description:
           "Progressive Web Applications (PWA) Challenge: Text Editor",
-        background_color: "#225ca3",
+        background_color: "#E91E63",
         theme_color: "#225ca3",
         start_url: "/",
         publicPath: "/",
